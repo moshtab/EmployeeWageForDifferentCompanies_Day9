@@ -4,21 +4,27 @@ import java.util.Random;
 
 public class EmployeeWage {
 
-	public static void calculatingWage() {
+	public int wagePerHr;
+	public int maxHrs;
+	public int noOfWorkingDays;
+
+	public EmployeeWage(int wagePerHr, int maxHrs, int noOfWorkingDays) {
+		this.wagePerHr = wagePerHr;
+		this.maxHrs = maxHrs;
+		this.noOfWorkingDays = noOfWorkingDays;
+	}
+
+	public int employeeWage() {
 		int empHrs = 0;
 		int totalWorkingDays = 0;
 		int workingHr = 0;
 		int empWage = 0;
-		int wagePerHr = 20;
-		int maxHrs = 100;
-		int noOfWorkingDays = 100;
 
 		while (empHrs <= maxHrs && totalWorkingDays <= noOfWorkingDays) {
 			Random r = new Random();
 			int empCheck = r.nextInt(3);
 			switch (empCheck) {
 			case 0: {
-
 				workingHr = 8;
 				break;
 			}
@@ -32,16 +38,13 @@ public class EmployeeWage {
 			}
 			}
 			empHrs += workingHr;
+
 			empWage = empWage + (workingHr * wagePerHr);
+			totalWorkingDays++;
 		}
-		System.out.println("Employee wage is : " + empWage);
+		return empWage;
 
 	}
-
-	public static void main(String[] args) {
-		System.out.println("Welcome to Employee wage Computation Program");
-		calculatingWage();
-
-	}
-
 }
+
+
