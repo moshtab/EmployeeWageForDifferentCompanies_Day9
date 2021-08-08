@@ -1,7 +1,11 @@
 # EmployeeWageForDifferentCompanies_Day9
 Uc1 :- Check Employee is Present or Absent
 
+      -- Use ((RANDOM)) for Attendance Check
+
 Uc2 :- Calculate Daily Employee Wage
+
+     -Wage per Hour is 20 and Full day Hour is 8 
 
 Uc3 :- Add Part time Employee & Wage
 
