@@ -8,11 +8,10 @@ Uc3 :- Add Part time Employee & Wage
 Uc4 :- Solving using Switch Case Statement
 
 Uc5 :- Calculating Wages for a Month
-
       - Assume 20 Working Day per Month
       
 Uc6 :- Calculate Wages till a condition of total working hours or days is reached for a month
-
+  
       - Assume 100 hours and 20 days
       
 Uc7 :- Refactor the Code to write a Class Method to Compute Employee Wage
